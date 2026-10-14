@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping List</h1>
+
+      <div class="input-group">
+        <input type="text" id="itemInput" placeholder="Add an item" required />
+        <input type="number" id="quantity" placeholder="Quantity" min="1" />
+        <input type="number" id="price" placeholder="Price" required />
+        <button class="btn-add" id="addBtn">Add Item</button>
+      </div>
+
+      <ul id="itemList"></ul>
+
+      <p class="total">Total Purchased: <span id="total">KSh 0.00</span></p>
+
+      <button class="btn-clear" id="clearBtn">Clear List</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
